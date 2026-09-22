@@ -12,33 +12,33 @@ calculate_total(): Returns or prints the sum of mark1 + mark2.
 calculate_average(): Divides the total by 2 and prints the average mark.
 """
 
+
 class Student:
     # constructor
     def __init__(self, name, mark1, mark2):
-        self.name = 
+        self.name = name
         self.mark1 = mark1
         self.mark2 = mark2
 
     # methods
     def calculate_total(self):
-        print(self.mark1 + self.mark2)
+        total = self.mark1 + self.mark2
+        print("Total = ", total)
 
     def calculate_average(self):
         total = self.mark1 + self.mark2
         average = total / 2
-        print(average)
+        print("the average is", average)
+
+    """
+    write a method to print the student name
+    """
+
+    def student_name(self):
+        print("Student name is = ", self.name)
 
 
-# calling my object
-
-my_student = Student("Vetri", 75, 80)  # Attributes are passed here
-
-# calling my methods here
-my_student.calculate_total()
-my_student.calculate_average()
-
-print("Checking for another student below::::::")
-
-test = Student("Sathish", 60, 60)
-test.calculate_total()
-test.calculate_average()
+sample = Student(name="John", mark1=85, mark2=95)
+sample.calculate_total()
+sample.calculate_average()
+sample.student_name()
