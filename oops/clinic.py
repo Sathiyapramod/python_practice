@@ -17,3 +17,5 @@ check_status(): Print the patient name and their fever_temp
      else, print "do continuous checkup"
 
 """
+
+
