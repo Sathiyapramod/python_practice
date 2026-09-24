@@ -38,17 +38,17 @@ class EWallet:
             print("INCORRECT PIN number")
         else:
             print("PIN number matching")
-        if amount > self.balance:
-            # amount greater than balance -> Insufficient balance
-            print("Insufficient Balance !!, Cannot withdraw", amount)
-        else:
-            # amount less than balance -> ok go ahead
-            # subtract the amount from bank balance
-            self.balance = self.balance - amount
-            # AMount debited message
-            print("Amount debited")
-            # Current Balance show
-            print("Your Current Bank Balance is", self.balance)
+            if amount > self.balance:
+                # amount greater than balance -> Insufficient balance
+                print("Insufficient Balance !!, Cannot withdraw", amount)
+            else:
+                # amount less than balance -> ok go ahead
+                # subtract the amount from bank balance
+                self.balance = self.balance - amount
+                # AMount debited message
+                print("Amount debited")
+                # Current Balance show
+                print("Your Current Bank Balance is", self.balance)
 
 
 user = EWallet("Muthupandi", 10000, 2233)
