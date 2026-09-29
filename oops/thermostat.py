@@ -33,7 +33,9 @@ class Thermostat:
         print("current temperature is", self.temp)
 
 
-sectionA = Thermostat(room_name="section-a", temp=25)
+sectionA = Thermostat(
+    room_name="section-a",
+      temp=25)
 # increase 1 time
 sectionA.increase_temp()
 
